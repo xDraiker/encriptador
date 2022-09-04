@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/style-dist.css" />
+    <title>sprint1</title>
+  </head>
+  <body>
+    <header class="header">
+        <h1 class="header__h1">Encriptador de texto</h1>
+    </header>
+      <main class=" main">
+        <span class="main__alert"><b class="main__alert--icon">!</b> El texto no debe tener letras mayúsculas o acentos</span>
+        <form action="Js/script.js" id="formulario" class="main__fomulario formulario">
+            <textarea name="textIn" class="fomulario__textarea fomulario__textarea--input" placeholder="Introduzca su texto"></textarea>
+            <div class="fomulario__panel panel" id="panel">
+              <button class="panel__button panel__button--encode" id="buttonC">Encriptar</button>
+              <button class="panel__button panel__button--decode" id="buttonD">Desencriptar</button>
+              <button class="panel__button panel__button--copy panel__button--active" id="buttonCopy">Copy</button>
+            </div>
+            <textarea name="textOut" class="fomulario__textarea fomulario__textarea--output" placeholder="Resultado de la encriptación o desencriptaron del texto"></textarea>
+          </form>
+      </main>
+    <footer class="footer">
+        <a href="https://github.com/xDraiker/xDraiker.github.io" class="footer__link link">
+          <img class="link__github" src="SVG/github.svg" alt="icono_github">
+        </a>
+    </footer>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
