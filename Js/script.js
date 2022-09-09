@@ -20,7 +20,7 @@ const desencriptar = texto => {
   return textoDesEncriptado;
 };
 const validar = texto => {
-  const regex = /[A-Zá-źÁ-Ź]/g;
+  const regex = /[\u00E0-\u00f0\u00f2-\u00FC]/g;
   return regex.test(texto);
 }
 
